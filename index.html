@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CGV</title>
+    <link rel="icon" href="img/images.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Верхняя часть заголовка -->
+        <section class="header-top">
+            <!-- Изображение в заголовке -->
+            <div class="image-container" style=" height: 100px;
+            position: absolute;
+            top: 0;
+            background: #0D76F5;
+            width: 100%;" >
+                <img src="img/980x80.jpg" class="header-image" >
+            </div>
+
+            <!-- Логотип и элементы авторизации -->
+            <div class="logo">
+                <img src="img/logoRed.png" class="logo-img" alt="Logo">
+                <span class="logo-text">CULTUREPLEX</span>
+                <img src="img/16758461047540.png" class="logo-image-right" alt="Right Logo">
+                <img src="img/loginPassword.png" class="Password" alt="Password">
+                <img src="img/loginJoin.png" class="Join" alt="Join">
+                <img src="img/loginMember.png" class="Member" alt="Member">
+                <img src="img/loginCustomer.png" class="Customer" alt="Customer">
+            </div>
+
+            <!-- Меню навигации -->
+            <nav class="menu">
+                <ul>
+                    <li><a>로그인</a></li>
+                    <li><a>회원가입</a></li>
+                    <li><a>MY CGV</a></li>
+                    <li><a>고객센터</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Нижняя часть заголовка -->
+        <article class="header-bottom">
+            <div class="content">
+                <!-- Основное меню навигации -->
+                <nav class="menu">
+                   <strong> <a style="font-size: 16px; width: 70px; padding: 20px 0;">영화 </a> </strong>
+                   <strong> <a style="font-size: 16px;width: 70px; padding: 20px 0;">극장</a></strong>
+                   <strong><a  style="font-size: 16px; width: 70px; padding: 20px 0;">예매</a></strong>
+                    <strong><a style="font-size: 16px; width: 70px; padding: 20px 0;">스토어</a></strong>
+                    <strong><a style="font-size: 16px; width: 70px; padding: 20px 0;">이벤트</a></strong>
+                    <strong><a style="font-size: 16px; width: 70px; padding: 20px 0;">혜택</a></strong>
+                </nav>
+                <!-- Поисковая строка -->
+                <div>
+                    <label for="Search">
+                        <input name="ctl00$subMenu$header_keyword" type="text" id="keyword">
+                        <input name="ctl00$subMenu$header_ad_keyword" type="hidden" id="ad_keyword">
+                    </label>
+                    <button type="button" class="button_Search" id="botton_search">Search</button>
+                </div>
+            </div>
+        </article>
+    </header>
+    <main>
+        <!-- Блок выбора фильмов -->
+        <div class="movieSelection_wrap">
+            <div class="contents">
+                <!-- Видео  -->
+                <div class="video-background">
+                    <video style=" height: 100%; position: relative; width: 960px; margin: 0 auto; display: block;" autoplay="" muted="">
+                        <source src="https://adimg.cgv.co.kr/images/202405/Barkers/Barkers_1080X608_pc.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Дополнительный контент -->
+                <article class="bottom"></article>
+
+                <!-- Навигация по категориям фильмов -->
+                <section class="sample">
+                    <article class="sample-content">
+                        <nav class="content2">
+                            <a class="active" id="btnMovie"><strong style="color: #222;">무비차트</strong></a>
+                            <a id="btnReserMovie">|</a>
+                            <a id="btnReserMovie">상영예정작</a>
+                        </nav>
+                        <!-- Кнопка "전체보기" -->
+                        <a  id="button_Movie" class="button_all">전체보기 &gt;</a>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <!-- Галерея фильмов -->
+        <section class="filmimg">
+            <div class="logo-images">
+                <div class="film-item">
+                    <img src="img/88104_320.jpg" alt="범죄도시4">
+                    <h4>범죄도시4</h4>
+                    <p>
+                        <img src="img/eggGoldeneggPreegg.png" class="egg-icon" alt="Golden Egg">
+                        99% | 예매율 76.1%
+                    </p>
+                </div>
+                <div class="film-item">
+                    <img src="img/87948_320.jpg" alt="쿵푸팬더4">
+                    <h4>쿵푸팬더4</h4>
+                    <p>
+                        <img src="img/eggGoldenegggreat.png" class="egg-icon" alt="Golden Egg">
+                        92% | 예매율 1.5%
+                    </p>
+                </div>
+                <div class="film-item">
+                    <img src="img/88153_320.jpg" alt="스턴트맨">
+                    <h4>스턴트맨</h4>
+                    <p>
+                        <img src="img/eggGoldenegggreat.png" class="egg-icon" alt="Golden Egg">
+                        99% | 예매율 5.1%
+                    </p>
+                </div>
+                <div class="film-item">
+                    <img src="img/88179_320.jpg" alt="챌린저스">
+                    <h4>챌린저스</h4>
+                    <p>
+                        <img src="img/eggGoldeneggPreegg.png" class="egg-icon" alt="Golden Egg">
+                        92% | 예매율 1.7%
+                    </p>
+                </div>
+                <div class="film-item">
+                    <img src="img/88171_320.jpg" alt="포켓몬스터-성도지...">
+                    <h4>포켓몬스터-성도지...</h4>
+                    <p>
+                        <img src="img/eggGoldenegggreat.png" class="egg-icon" alt="Golden Egg">
+                        99% | 예매율 1.8%
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Информация об эвентах -->
+        <section class="sample2">
+            <article class="sample-content2">
+                <nav class="content22">
+                    <a href="sample2" class="event" id="button_Event"><strong style="color: #222;">Event</strong></a>
+                </nav>
+                <div>
+                    <a href="/movies/?lt=1&amp;ft=0" id="button_Movie" class="button_all">전체보기 &gt;</a>
+                </div>
+            </article>
+            <div class="eventimg">
+                <div class="event-images">
+                    <div class="event-item">
+                        <img src="img/17140231660780.jpg">
+                        <p>{범죄도시4}월요병 타팝 상영화</p>
+                        <p>2024.02.01~2026.01.31</p>
+                    </div>
+                    <div class="event-item">
+                        <img src="img/17059006425860.jpg">
+                        <p>내 통신사 혜택 확인하고CGV 영화 할인...</p>
+                        <p>2024.02.01~2026.01.31</p>
+                    </div>
+                    <div class="event-item">
+                        <img src="img/17131432126120.jpg">
+                        <p>[MOINTSX인티N] 사유하는 목요일 (김...)</p>
+                        <p>2024.02.01~2026.01.31</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Информация о видах кинотеатра-->
+        <section class="sample2">
+            <article class="sample-content2">
+                <nav class="content22">
+                    <a href="#none" class="active" id="button_sample2"><strong style="color: #222; ">특별관</strong></a>
+                </nav>
+                <div>
+                    <a  class="button_all">전체보기 &gt;</a>
+                </div>
+            </article>
+            <div class="room-timg">
+                <div class="room-images">
+                    <img src="img/16390080561620.png">
+                    <div class="content-room">
+                        <div class="room-item" style="border-bottom: 1px solid #222;">
+                            <a>
+                                <strong>SUITE CINEMA</strong>
+                                <div class="Room_Tag">
+                                    <span class="Tag" style="display: flex;">#호텔 컨셉의 프리미엄관</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="room-item" style="border-bottom: 1px solid #222;">
+                            <a>
+                                <strong>CINE &amp; LIVINGROOM</strong>
+                                <div class="Room_Tag">
+                                    <span class="Tag" style="display: flex;">#신개념 소셜 상영관</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="room-item" style="border-bottom: 1px solid #222;">
+                            <a>
+                                <strong>4DX</strong>
+                                <div class="Room_Tag">
+                                    <span class="Room_Tag1" style="display: flex;">#모션시트 #오감체험</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="room-item" style="border-bottom: 1px solid #222;">
+                            <a>
+                                <strong>CINE de CHEF</strong>
+                                <div class="Room_Tag">
+                                    <span class="Room_Tag" style="display: flex;">#쉐프가 있는 영화관</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Информация о купонах/ акциях -->
+        <div class="giftcon_wrap">
+            <div class="contents">
+                <ul class="giftcon_list_wrap">
+                    <li>
+                        <dl class="giftcon_list">
+                            <dt>패키지<a class="button_more">더보기</a></dt>
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16778218049340.jpg" alt="우리 패키지"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>우리 패키지</span>
+                                        <strong>61,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16778214176450.jpg" alt="나랑 너 패키지"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>나랑 너 패키지</span>
+                                        <strong>34,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16778206767040.jpg" alt="좋은 날 패키지"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>좋은 날 패키지</span>
+                                        <strong>18,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="giftcon_list">
+                            <dt>영화관람권<a class="button_more">더보기</a></dt>
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16777513183750.jpg" alt="CGV 영화관람권"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>CGV 영화관람권</span>
+                                        <strong>13,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16104445886810.jpg" alt="IMAX 영화관람권"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>IMAX 영화관람권</span>
+                                        <strong>18,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/16105061088530.jpg" alt="4DX 영화관람권"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>4DX 영화관람권</span>
+                                        <strong>19,000원</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="giftcon_list">
+                            <dt>기프트카드<a class="button_more">더보기</a></dt>
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/15814124358590.jpg"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>PACONNIE A형</span>
+                                        <strong>금액충전형</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/15814158039890.jpg"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>PACONNIE B형</span>
+                                        <strong>금액충전형</strong>
+                                    </div>
+                                </a>
+                            </dd>
+
+                            <dd>
+                                <a>
+                                    <div class="img_wrap" data-scale="false"><img src="img/15814162227570.jpg"></div>
+                                    <div class="giftcon_info_wrap">
+                                        <span>PACONNIE C형</span>
+                                        <strong>금액충전형</strong>
+                                    </div>
+                                </a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Адрес и другая информация -->
+        <article class="lll">
+            <div class="notice_wrap" >
+                <div class="contents">
+                    <d class="notice_container">
+                        <div class="notice_content">
+                            <div id="Content_notice_wrap" class="notice_wrap">
+                                <strong>공지사항</strong>
+                                <a>[행사/이벤트][CGV] <선재 업고 튀어> 최종화 단... </a>
+                                <a style="float: right;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #666;
+                                line-height: 1.417em;
+                                border: 1px solid #f4f4f4;
+                                border-radius: 11px;">더보기</a>
+                            </div>
+                            <div class="client_wrap">
+                                <dl class="client_list">
+                                    <dt><strong>고객센터</strong></dt>
+                                    <dd>
+                                        <strong>1544-1122</strong>
+                                        <span>고객센터 운영시간 (평일 09:00~18:00)
+                                            <p>업무시간 외 자동응답 안내 가능합니다.</p>
+                                        </span></dd>
+                                </dl>
+                                <div class="client_button_wrap" id="client_button_wrap">
+                                    <a>FAQ</a>
+                                    <a>1:1 문의</a>
+                                    <a>대관/단체 문의</a>
+                                </div>
+                            </div>
+                        </div>
+                    </d>
+                    <div class="qr">
+                        <strong>앱 다운로드</strong>
+                        <span>CGV앱에서 더 편리하게 이용하세요</span>
+                        <div class="img_qr" ><img src="img/qrcode.gif" ></div>
+                        <p>QR코드를 스캔하고<br>앱설치 페이지로 바로 이동하세요</p>
+                    </div>
+                    <div class="banner">
+                        <div class="banner_list">
+                            <img src="img/CGV_BUGS_226x259.png" width="205px">
+                        </div>
+                    </div>
+        </article>
+    </main>
+    <!-- Конец -->
+    <footer>
+        <div class="background_footer" style="min-width: 1040px; padding: 0 0 14px; background-color: #f8f8f8;">
+            <article class="move" style="padding: 200px 0 0 0;">
+                <ul class="policy_list" style="list-style: none; display: flex; justify-content: space-between; max-width: 980px; margin: 0 auto; padding: 23px 0; border-bottom: 1px solid #ebebeb;">
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>회사소개</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>지속가능경영</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>IR</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>채용정보</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>광고/제휴/출점문의</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>이용약관</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>편성기준</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a><strong>개인정보처리방침</strong></a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>법적고지</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>이메일주소무단수집거부</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>윤리경영</a></li>
+                    <li style="font-weight: 500; font-size: 13px; color: #666; line-height: 1.462em;"><a>사이버감사실</a></li>
+                </ul>
+                <article class="company_info_wrap">
+                    <section class="company_info">
+                        <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+                        <dl class="company_info_list">
+                            <dt>대표이사</dt>
+                            <dd>허민회</dd>
+                            <dt>사업자등록번호</dt>
+                            <dd>104-81-45690</dd>
+                            <dt>통신판매업신고번호</dt>
+                            <dd>2017-서울용산-0662>사업자정보확인</dd>
+                        </dl>
+                        <dl class="company_info_list">
+                            <dt>호스팅사업자</dt>
+                            <dd>CJ올리브네트웍스</dd>
+                            <dt>개인정보보호 책임자</dt>
+                            <dd>도형구</dd>
+                            <dt>대표이메일</dt>
+                            <dd>cjcgvmaster@cj.net</dd>
+                        </dl>
+                        <p class="copyright">© CJ CGV. All Rights Reserved</p>
+                    </section>
+                    <select id="familysite">
+                        <option value="" class="familysiteTitle">계열사 바로가기</option>
+                    </select>
+                </article>
+            </article>
+        </div>
+    </footer>    
+</body>
+</html>
